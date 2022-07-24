@@ -13,9 +13,14 @@ npm install @treblle/directus-extension-treblle
 Use environment variables for providing Treblle credentials and configuration. Directus already supports `.env` file, so it enough to just append your variables there.
 
 ```
-TREBLLE_API_KEY=api_key
-TREBLLE_PROJECT_ID=project_id
-TREBLLE_SHOW_ERRORS=true
-TREBLLE_FIELDS_TO_MASK=["password"]
+## Treblle Configuration
+
+# Required
+TREBLLE_API_KEY=your_api_key
+TREBLLE_PROJECT_ID=your_project_id
+
+# Optional
+# TREBLLE_SHOW_ERRORS=true
+# TREBLLE_FIELDS_TO_MASK=["password"]
 ```
 
