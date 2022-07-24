@@ -1,0 +1,38 @@
+{
+  "name": "@treblle/directus-extension-treblle",
+  "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Treblle/treblle-directus.git"
+  },
+  "author": "Treblle",
+  "license": "MIT",
+  "keywords": [
+    "directus",
+    "directus-extension",
+    "directus-custom-hook",
+    "directus-treblle",
+    "treblle"
+  ],
+  "directus:extension": {
+    "type": "hook",
+    "path": "dist/index.js",
+    "source": "src/index.ts",
+    "host": "^9.14.4"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "directus-extension build",
+    "dev": "directus-extension build -w --no-minify"
+  },
+  "devDependencies": {
+    "@directus/extensions-sdk": "9.14.4",
+    "@types/node": "^18.0.6",
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "treblle": "^1.2.1"
+  }
+}
